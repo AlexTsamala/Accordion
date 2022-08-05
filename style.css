@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kumbh Sans';
+}
+
+.main-container{
+    background: #FFFFFF;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    border-radius: 23px;
+    padding:0px 24px 48px;
+    margin: 0 24px;
+}
+
+.pictures-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130px;
+}
+
+.pattern-of-img-desktop{
+    display: none;
+}
+
+.box{
+    display: none;
+}
+
+.woman-img-desktop{
+    display: none;
+}
+
+.woman-img{
+    height: 180px;
+    width: 237px;
+    transform: translateY(-108px);
+}
+
+.pattern-of-img{
+    transform: translateY(-184px);
+}
+
+.lists-container{
+    max-width: 390px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+h1{
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1E1F36;
+    margin-bottom:40px;    
+}
+
+.main-texts{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4B4C5F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hidden-texts{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #787887;
+    display: none;
+    opacity: 0;
+}
+
+.line{
+    height: 1px;
+    width: 279px;
+    background: #E8E8EA;
+}
+
+.text-hider{
+    opacity: 1;
+    transition: 1.5s;
+}
+
+.arrowRotate{
+    transform: rotate(-0.5turn);
+}
+
+.main-texts:hover{
+    color: #F47B56;
+}
+
+@media(min-width:900px) {
+    
+    body{
+        overflow: hidden;
+    }
+
+    .main-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width:920px;
+        padding:0px;
+        position: relative;
+    }
+    
+    .pictures-container{
+        height: 509px;
+        overflow: hidden;
+    }
+
+    .pattern-of-img{
+        display: none;
+        top:370px;
+        left:-550px;
+    }
+
+    .pattern-of-img-desktop{
+        display: block;
+        transform: translate(-60px, -260px);
+    }
+
+    .box{
+        display:block;
+        position: absolute;
+        top: 245px;
+        left: -93px;
+    }
+
+    .woman-img-desktop{
+        display:block;
+        height: 359px;
+        width: 472px;
+        transform: translate(-93px, 95px);
+    }
+    
+    .woman-img{
+        display: none;
+    }
+
+    h1{
+        margin-bottom:45px;    
+        text-align: left;
+    }
+    
+    ul{
+        padding-right: 111px;
+    }
+    
+}
